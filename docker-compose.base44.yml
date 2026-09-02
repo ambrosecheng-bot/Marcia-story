@@ -1,0 +1,10 @@
+services:
+  web:
+    image: nginx:alpine
+    user: root
+    ports:
+      - "3000:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    # Repo dir is root-only (0700), so nginx workers must run as root too.
+    command: sh -c "sed -i 's/^user .*/user root;/' /etc/nginx/nginx.conf && nginx -g 'daemon off;'"
