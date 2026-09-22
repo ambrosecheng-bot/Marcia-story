@@ -2,26 +2,109 @@
 
 > *"In every stroke of the pen, a prayer."*
 
-A personal memoir website honouring the life and legacy of **Marcia Collins** (born 1936) — master calligrapher, woman of faith, and teacher whose quiet influence has touched many lives over nine decades.
+A personal memoir website honouring the life and legacy of **Marcia Collins** (born 2 October 1936, London) — master calligrapher, woman of faith, devoted mother and grandmother, whose quiet influence has touched many lives over nine decades.
 
-https://ambrosecheng-bot.github.io/Marcia-story/
+This website was created as a gift for Marcia on the occasion of her 90th year, presented at *An Evening of Memories, October 2026.*
 
 ---
 
 ## About This Site
 
-This is a single-file, self-contained HTML website created to record and present the life story of Marcia Collins. It is designed to be simple to host, easy to maintain, and beautiful to read — a lasting digital memorial that can be shared with family, friends, and all who have been touched by her life.
+A single-file, self-contained HTML memoir website built Mobile-First, fully responsive, and deploy-ready with no build step required. All 16 photographs are embedded directly as base64 — no external image hosting needed.
 
-The site is structured around six chapters of her life:
+The site draws directly from **Marcia's own memoir**, recorded in her own words at *An Evening of Memories, 3 October 2026*, and presents her life across six chapters.
 
-| Chapter | Title |
-|---------|-------|
-| Part I | Roots & Origins |
-| Part II | Youth & Formation |
-| Part III | Love & Family |
-| Part IV | Trials & Turning Points |
-| Part V | The Art of Calligraphy |
-| Part VI | Her Legacy |
+---
+
+## The Six Chapters
+
+### Part I — Roots & Origins
+*From a premature birth in wartime London to a childhood in the fields of Essex*
+
+| Section | Detail |
+|---------|--------|
+| Born into a World on the Edge of Storm | Charing Cross Hospital, 2 October 1936 — 4 pounds, fitting along a doctor's forearm |
+| Those Dark Curly Locks | Marcia as a toddler in her pram, c.1937 |
+| Mother & Child — A Garden, c.1937 | A hand-tinted photograph behind ornate glass — Marcia's mother holding her |
+| Mayesbrook, 1939 | Aged three, already blonde as she described in her memoir — six months before the war |
+| The Chair Left Behind | The unexploded bomb, the hurried departure, the chair she never got back |
+| A Childhood Rooted in Field & Sky | Hornchurch, Essex, 1940 — hide-and-seek, hedgerows, and the seeds of a lifelong eye for beauty |
+
+---
+
+### Part II — Youth & Formation
+*Wartime injury, Manchester, the scholarship, and twenty-one dresses*
+
+| Section | Detail |
+|---------|--------|
+| A Child Who Needed Her Father | The infected finger, the rising temperature, the ward sister's daily report — and Dad recalled from France |
+| Manchester, Grandma & Victory | Euston Station, Pendlebury Hospital, Grandma's canal, the bull at the door, and the 1945 street party |
+| The Scholarship & Twenty-One Dresses | Romford County High School, the sewing machine rescue, and a lifetime of making things with her hands |
+
+---
+
+### Part III — Love & Family
+*The cinema, the fountain, the wedding, and a life built at number 22*
+
+| Section | Detail |
+|---------|--------|
+| Last to Fill the Row | Tony — met at the cinema, introduced by a family friend, last to fill the row |
+| Tuesdays, Saturdays & a Fountain | The zoo, the borrowed company, and the proposal that wasn't quite a proposal — Southampton |
+| 8th of May, 1965 — At Last | The Old Bailey, the long wait, and finally the wedding day |
+| The Honeymoon | A week at Land's End — sunrise and sunset over the Atlantic |
+| The Family She Built | Three generations gathered around Marcia and Tony |
+| Number 22, Butterfield Road | The front door where they stood with their two daughters — where Marcia still lives today |
+| A New Life Arrives | A newborn held with careful, certain hands — pure joy |
+| Marcia — In Her Prime | A portrait, c.1970s–80s — the quiet confidence of a woman who knows exactly who she is |
+| That Laugh — That Man | Tony writing, Marcia laughing — two people entirely sufficient to each other |
+| Beside Still Waters | Tony's arms around Marcia by a river — a summer afternoon, entirely at peace |
+| The Family Portrait | A formal black and white portrait, c. early 1970s |
+| A Formal Evening | Black tie, floor-length gowns, chrysanthemums — an evening dressed for properly |
+
+---
+
+### Part IV — Trials & Turning Points
+*Six words. No bitterness. Just grace.*
+
+| Section | Detail |
+|---------|--------|
+| When Things Do Not Work Out | "Alas, my marriage proved to be a failure." — the Old Bailey, the long wait |
+| Luckily, Father Had a Good Job | That single word BUT — a whole philosophy of life |
+
+---
+
+### Part V — Giving Back
+*A cheque, a hospice, and a life of quiet service*
+
+| Section | Detail |
+|---------|--------|
+| Three Hundred and Fifty Pounds | HSBC cheque, £350 to Countess Mountbatten House from Southampton Pops Orchestra, 16 May 2005 |
+
+---
+
+### Part VI — Her Legacy
+*What she left in every stitch*
+
+| Section | Detail |
+|---------|--------|
+| What She Left in Every Stitch | Twenty-one dresses made by hand for granddaughter Paula's holiday |
+| A Circle Completed | Born at 4 pounds — decades later, she made a nightdress for a grandson born at the same weight |
+| Closing Dedication | Ecclesiastes 9:10 — "Whatever your hand finds to do, do it with all your might" |
+
+---
+
+## Technical Specifications
+
+| Property | Value |
+|----------|-------|
+| Architecture | Single-file HTML — no framework, no build step |
+| Responsive | Mobile-First CSS with `@media (min-width: 900px)` breakpoints |
+| Images | 16 photographs embedded as base64 (JPEG + PNG) |
+| File size | ~15 MB |
+| Fonts | Google Fonts — Playfair Display, EB Garamond, Inter |
+| JavaScript | None |
+| Dependencies | None (Google Fonts loaded via CDN) |
+| Hosting | GitHub Pages |
 
 ---
 
@@ -29,17 +112,15 @@ The site is structured around six chapters of her life:
 
 ```
 /
-├── index.html        ← The complete website (single file, self-contained)
+├── index.html        ← Complete website (single self-contained file, ~15 MB)
 └── README.md         ← This file
 ```
-
-> **Note:** The portrait photograph is embedded directly inside `index.html` as a base64-encoded image, so the site requires no external image files or assets to run.
 
 ---
 
 ## How to View Locally
 
-Simply open `index.html` in any modern web browser — no server, no dependencies, no installation required.
+Open `index.html` in any modern web browser — no server or installation required.
 
 ```bash
 # macOS
@@ -56,98 +137,96 @@ xdg-open index.html
 
 ## How to Deploy on GitHub Pages
 
-1. **Create a new GitHub repository** (e.g. `marcia-collins-memoir`)
-2. **Upload both files** — `index.html` and `README.md` — to the root of the repository
+1. Create a new GitHub repository named `marcia-collins-memoir`
+2. Upload `index.html` and `README.md` to the root
 3. Go to **Settings → Pages**
-4. Under *Source*, select **Deploy from a branch**
-5. Choose **main** branch and **/ (root)** folder
-6. Click **Save**
+4. Under *Source*, select **Deploy from branch → main → / (root)**
+5. Click **Save**
 
-Your site will be live at:
+Live URL:
 ```
 https://<your-github-username>.github.io/marcia-collins-memoir/
 ```
 
-GitHub Pages deployment typically takes 1–2 minutes.
+Deployment takes 1–2 minutes.
 
 ---
 
-## How to Rename the File
+## Updating the Site
 
-GitHub Pages expects the main file to be named `index.html`. If your file is currently named `marcia_memoir.html`, rename it before uploading:
+All content lives inside `index.html`. To update:
 
-```bash
-mv marcia_memoir.html index.html
-```
-
----
-
-## Customisation Guide
-
-All content can be edited directly inside `index.html` using any text editor (Notepad, TextEdit, VS Code, etc.).
-
-| What to change | Where to find it in the HTML |
-|----------------|------------------------------|
-| Site title in browser tab | `<title>` tag |
-| Name in navigation bar | `.nav-logo` text |
-| Main headline | `<h1 class="hero-title">` |
-| Subtitle / description | `<p class="hero-desc">` |
-| Birth year & meta data | `.meta-value` spans |
-| Quote card text | `.quote-body` and `.quote-attr` |
-| Portrait photo | Replace the `src="data:image/png;base64,..."` with a new base64 image or a file path |
-| Chapter names | `.ch-title` spans in the footer strip |
+| What to change | Where in the HTML |
+|----------------|-------------------|
+| Any text | Find the section by its heading, edit the `<p>` tags |
+| A photograph | Replace the `src="data:image/..."` with a new base64 string |
+| A caption | Find the `fullbleed-img-caption` or `img-caption` near the image |
+| Placeholder text (✏️ markers) | Search for `✏️` — placeholders await Marcia's own words |
 | Colour palette | `:root` CSS variables at the top of `<style>` |
 
-### Colour Variables
+### Pending placeholders (marked ✏️ in the site)
+
+These sections are awaiting confirmation from Marcia:
+
+1. **Family gathering** — names of all family members and occasion
+2. **New arrival, c.1970s** — who the baby is and the year
+3. **Tony & Marcia at dinner** — occasion and year
+4. **Tony & Marcia by the river** — location and year
+5. **Formal family portrait** — names and year
+6. **Formal evening** — occasion, names, and year
+7. **HSBC cheque (Part V)** — Marcia's own story in her words
+
+---
+
+## Design
+
+### Colour Palette
 
 ```css
 :root {
   --cream:      #F7F3ED;   /* page background */
-  --ink:        #1C1813;   /* primary text */
-  --gold:       #B8935A;   /* accent colour */
-  --white:      #FDFAF6;   /* card / text panel background */
+  --cream-mid:  #EDE7DC;   /* section alternates */
+  --cream-dark: #D9CFBF;   /* borders */
+  --ink:        #1C1813;   /* primary text & dark panels */
+  --ink-mid:    #4A4035;   /* body text */
+  --ink-light:  #8A7F72;   /* captions & labels */
+  --gold:       #B8935A;   /* accent */
+  --gold-light: #D4B483;   /* borders on gold panels */
+  --gold-pale:  #F0E4CC;   /* quote card backgrounds */
+  --white:      #FDFAF6;   /* text panels */
 }
 ```
 
----
+### Typography
 
-## Replacing the Portrait Photo
-
-To use a local image file instead of the embedded base64 image:
-
-1. Place your photo (e.g. `marcia.jpg`) in the same folder as `index.html`
-2. In `index.html`, find the `<img>` tag inside `.hero-photo`
-3. Replace the long `src="data:image/png;base64,..."` with:
-
-```html
-<img src="marcia.jpg" alt="Marcia Collins" />
-```
-
----
-
-## Technology
-
-- Pure HTML5 + CSS3 — no JavaScript frameworks, no dependencies
-- Fonts loaded from Google Fonts: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) + [EB Garamond](https://fonts.google.com/specimen/EB+Garamond) + [Inter](https://fonts.google.com/specimen/Inter)
-- Portrait image embedded as base64 (no external image hosting required)
-- Fully responsive layout (desktop-first; mobile optimisation can be added)
+| Role | Font |
+|------|------|
+| Headings & titles | Playfair Display (serif) |
+| Body & quotes | EB Garamond (serif) |
+| Labels & navigation | Inter (sans-serif) |
 
 ---
 
 ## Credits
 
-- **Subject:** Marcia Collins — Master Calligrapher
-- **Website concept & design:** Ambrose Cheng
-- **Built with:** Claude (Anthropic)
-- **Hosted on:** GitHub Pages
+| Role | Name |
+|------|------|
+| Subject | Marcia Collins |
+| Memoir text | Marcia Collins — *An Evening of Memories, October 2026* |
+| Website concept & build | Ambrose Cheng |
+| Built with | Claude (Anthropic) |
+| Photography | The Collins family |
+| Hosting | GitHub Pages |
 
 ---
 
 ## Licence
 
-This website is created for personal and family use. All content — text, images, and design — belongs to the Collins family. Please do not reproduce or distribute without permission.
+This website is created for personal and family use in honour of Marcia Collins. All content — text, photographs, and design — belongs to the Collins family. Please do not reproduce or distribute without permission.
 
 ---
 
 *"Whatever your hand finds to do, do it with all your might."*
 — Ecclesiastes 9:10
+
+*An Evening of Memories · October 2026*
